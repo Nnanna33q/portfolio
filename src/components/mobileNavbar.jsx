@@ -14,21 +14,21 @@ export default function MobileNavbar({ currentPage }) {
             style={{ width: '100vw', height: `calc(100vh - ${navbarHeightRef.current}px)` }}>
             <ul className="flex flex-col justify-evenly items-center text-secondary dark:text-primary h-full">
                 <li>
-                    <a href="/" className="text-2xl md:text-3xl font-clashbold">Home</a>
+                    <a href="index.html" className="text-2xl md:text-3xl font-clashbold">Home</a>
                     {currentPage === 'Home' &&
                         <div className="flex justify-center">
                             <div className="h-1 w-14 bg-gradient-to-r from-accent to-accent-secondary" />
                         </div>}
                 </li>
                 <li>
-                    <a href="/projects" className="text-2xl md:text-3xl font-clashbold">Projects</a>
+                    <a href="/projects.html" className="text-2xl md:text-3xl font-clashbold">Projects</a>
                     {currentPage === 'Projects' &&
                         <div className="flex justify-center">
                             <div className="h-1 w-14 bg-gradient-to-r from-accent to-accent-secondary" />
                         </div>}
                 </li>
                 <li>
-                    <a href="/contact" className="text-2xl md:text-3xl font-clashbold">Contact</a>
+                    <a href="/contact.html" className="text-2xl md:text-3xl font-clashbold">Contact</a>
                     {currentPage === 'Contact' &&
                         <div className="flex justify-center">
                             <div className="h-1 w-14 bg-gradient-to-r from-accent to-accent-secondary" />

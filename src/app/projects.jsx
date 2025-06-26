@@ -10,6 +10,7 @@ export default function ProjectsPage() {
   return (
     <main>
       <Navbar currentPage={'Projects'} />
+      <div className="md:py-10 lg:py-20"></div>
       <Projects />
       <Footer />
     </main>

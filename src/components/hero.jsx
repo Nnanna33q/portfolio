@@ -13,7 +13,7 @@ const Hero = () => {
               </h1>
             </div>
             <p className="gradientText font-medium font-pop text-[17px] text-secondary dark:text-[#FFFFFF99] max-w-[full] md:mt-8 lg:mt-1 md:max-w-[full] md:text-[24px] leading-md:[27px]">
-              Build a powerful online presence. We develop fast, secure, and user-friendly websites tailored for your business success
+              Build a powerful online presence. I develop fast, secure, and user-friendly websites tailored for your business success
             </p>
             <div className="md:mt-[16px] flex justify-center items-center  gap-[26px] md:gap-[40px]">
               <motion.a

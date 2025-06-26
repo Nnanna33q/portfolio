@@ -20,19 +20,18 @@ const Navbar = ({ currentPage }) => {
                             <div
                                 className={`before:content-[''] font-clashbold font-semibold text-[18px] md:text-[25px] lg:hover:before:bg-[#4C686F]s active:scale-[0.86] transition-all duration-100 before:absolute before:h-1 before:-bottom-1 before:transition-all before:duration-300 text-secondary dark:text-white hover:before:w-full relative`}
                             >
-                                Honour<span>!</span>
-                                <span>⚡</span>
+                                Camillus
                             </div>
                         </a>
-                        <div className="hidden lg:flex gap-x-8 items-center">
-                            <a className="font-clashbold font-semibold text-[18px] md:text-[25px]" href="/">
+                        <div className="hidden lg:flex gap-x-8 items-center text-secondary dark:text-primary">
+                            <a className="font-clashbold font-semibold text-[18px] md:text-[25px]" href="/index.html">
                                 Home
                                 {currentPage === 'Home' &&
                                     <div className="flex justify-center">
                                         <div className="h-1 w-14 bg-gradient-to-r from-accent to-accent-secondary" />
                                     </div>}
                             </a>
-                            <a className="font-clashbold font-semibold text-[18px] md:text-[25px] flex" href="/projects">
+                            <a className="font-clashbold font-semibold text-[18px] md:text-[25px] flex" href="/projects.html">
                                 Projects
                                 {currentPage === 'Projects' &&
                                     <div className="flex justify-center">
@@ -40,7 +39,7 @@ const Navbar = ({ currentPage }) => {
                                     </div>}
                             </a>
                         </div>
-                        <a className="hidden lg:block font-clashbold font-semibold text-[18px] md:text-[25px]" href="/contact">
+                        <a className="hidden lg:block font-clashbold font-semibold text-[18px] md:text-[25px] text-secondary dark:text-primary" href="/contact.html">
                             Contact
                             {currentPage === 'Contact' &&
                                 <div className="flex justify-center">
