@@ -31,7 +31,7 @@ const Navbar = ({ currentPage }) => {
                                         <div className="h-1 w-14 bg-gradient-to-r from-accent to-accent-secondary" />
                                     </div>}
                             </a>
-                            <a className="font-clashbold font-semibold text-[18px] md:text-[25px] flex" href="/projects.html">
+                            <a className="font-clashbold font-semibold text-[18px] md:text-[25px]" href="/projects.html">
                                 Projects
                                 {currentPage === 'Projects' &&
                                     <div className="flex justify-center">
