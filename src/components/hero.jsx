@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
+import { TwIcon, MailIcon, Discord } from "./svgs";
 
 const Hero = () => {
   return (
@@ -17,20 +17,20 @@ const Hero = () => {
             </p>
             <div className="md:mt-[16px] flex justify-center items-center  gap-[26px] md:gap-[40px]">
               <motion.a
-                href="https://www.facebook.com/honour.robinson.1"
+                href="mailto:camilluscodes@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
                 whileHover={{ scale: 0.99 }}
                 className="h-auto w-auto"
               >
-                <FbIcon
+                <MailIcon
                   fill="#137BED"
-                  className={`w-[30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
+                  className={`w-30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1 transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
               <motion.a
-                href="https://x.com/honour_can_code"
+                href="https://x.com/camilluscodes"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -43,29 +43,16 @@ const Hero = () => {
                 />
               </motion.a>
               <motion.a
-                href="https://www.instagram.com/robinsonhonour"
+                href="https://discordapp.com/users/1387975080109408359"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
                 whileHover={{ scale: 0.99 }}
                 className={`h-auto w-auto`}
               >
-                <IgIcon
+                <Discord
                   fill={`#137BED`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-white`}
-                />
-              </motion.a>
-              <motion.a
-                href="https://ng.linkedin.com/in/robinsonhonouramadi"
-                target="_blank"
-                rel="noreferrer"
-                whileTap={{ scale: 1.1 }}
-                whileHover={{ scale: 0.99 }}
-                className={`h-auto w-auto`}
-              >
-                <InIcon
-                  fill={`#137BED`}
-                  className={`w-[30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-white`}
+                  className={`w-[30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
                 />
               </motion.a>
             </div>

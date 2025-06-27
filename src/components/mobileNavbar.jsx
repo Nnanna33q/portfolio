@@ -27,13 +27,6 @@ export default function MobileNavbar({ currentPage }) {
                             <div className="h-1 w-14 bg-gradient-to-r from-accent to-accent-secondary" />
                         </div>}
                 </li>
-                <li>
-                    <a href="/contact.html" className="text-2xl md:text-3xl font-clashbold">Contact</a>
-                    {currentPage === 'Contact' &&
-                        <div className="flex justify-center">
-                            <div className="h-1 w-14 bg-gradient-to-r from-accent to-accent-secondary" />
-                        </div>}
-                </li>
             </ul>
         </motion.div>
     )

@@ -1,6 +1,5 @@
-import { useState, useEffect } from "react";
-import { LocationIcon, MailIcon, PhoneIcon } from "./svgs";
-import isDarkMode from "../data/darkMode";
+import { motion } from "framer-motion";
+import { MailIcon, Discord, TwIcon } from "./svgs";
 
 const Contact = () => {
   return (
@@ -13,46 +12,47 @@ const Contact = () => {
         </h3>
       </div>
       <div
-        className={`mt-[51px] flex gap-[60px] lg:flex lg:flex-row items-center justify-center`}
+        className={`hidden lg:block mt-[51px] flex gap-[60px] lg:flex lg:flex-row items-center justify-center`}
       >
-        <div className="flex flex-col items-center gap-[10px]">
-          <a
-            className={`text-accent font-medium text-base md:text-[20px] md:leading-[30px]`}
-            href="mailto:codewithhonour@gmail.com"
-          >
-            <div className="border border-accent/60 dark:border-accent/50 bg-primary dark:bg-secondary rounded-sm pr-[1px] pt-[1px] max-w-[75px] max-h-[75px]">
-              <MailIcon
-                fill={'#137BED'}
-                className={`w-[50px] h-[50px] p-2 md:p-[10px] md:w-[75px] md:h-[75px]`}
-              />
-            </div>
-          </a>
-        </div>
-        <div className="flex flex-col items-center gap-[10px]">
-          <a
-            className={`text-accent font-medium text-base md:text-[20px] md:leading-[30px]`}
-            href="mailto:codewithhonour@gmail.com"
-          >
-            <div className="border border-accent/60 dark:border-accent/50 bg-primary dark:bg-secondary rounded-sm pr-[1px] pt-[1px] max-w-[75px] max-h-[75px]">
-              <PhoneIcon
-                fill={'#137BED'}
-                className={`w-[50px] h-[50px] p-2 md:p-[10px] md:w-[75px] md:h-[75px]`}
-              />
-            </div>
-          </a>
-        </div>
-        <div className="flex flex-col items-center gap-[10px]">
-          <a
-            className={`text-accent text-base mx-auto text-center font-medium md:text-[20px] md:leading-[30px]`}
-          >
-            <div className="border border-accent/60 dark:border-accent/50 bg-primary dark:bg-secondary rounded-sm pr-[1px] pt-[1px] max-w-[75px] max-h-[75px]">
-              <LocationIcon
-                fill={'#137BED'}
-                className={`w-[50px] h-[50px] p-2 md:p-[10px] md:w-[75px] md:h-[75px]`}
-              />
-            </div>
-          </a>
-        </div>
+        <motion.a
+          href="mailto:camilluscodes@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          whileTap={{ scale: 1.1 }}
+          whileHover={{ scale: 0.99 }}
+          className="h-auto w-auto"
+        >
+          <MailIcon
+            fill="#137BED"
+            className={`w-30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1 transition-all duration-500 hover:bg-white`}
+          />
+        </motion.a>
+        <motion.a
+          href="https://x.com/camilluscodes"
+          target="_blank"
+          rel="noreferrer"
+          whileTap={{ scale: 1.1 }}
+          whileHover={{ scale: 0.99 }}
+          className={`h-auto w-auto`}
+        >
+          <TwIcon
+            fill={`#137BED`}
+            className={`w-[30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
+          />
+        </motion.a>
+        <motion.a
+          href="https://discordapp.com/users/1387975080109408359"
+          target="_blank"
+          rel="noreferrer"
+          whileTap={{ scale: 1.1 }}
+          whileHover={{ scale: 0.99 }}
+          className={`h-auto w-auto`}
+        >
+          <Discord
+            fill={`#137BED`}
+            className={`w-[30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-white`}
+          />
+        </motion.a>
       </div>
     </section>
   );

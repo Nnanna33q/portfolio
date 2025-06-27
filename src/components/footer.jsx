@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Copyright, FbIcon, IgIcon, InIcon, TwIcon } from "./svgs";
+import { Copyright, Discord, MailIcon, TwIcon } from "./svgs";
 import isDarkMode from "../data/darkMode";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
         second: '2-digit'
       }));
     };
-    
+
     updateTime(); // Initial call
     const timer = setInterval(updateTime, 1000);
     return () => clearInterval(timer);
@@ -28,7 +28,7 @@ const Footer = () => {
 
   return (
     <section className="mx-[30px] mt-[60px] pb-[20px] lg:pb-[50px] lg:mx-[76px] lg:mt-[150px]">
-       <div className="lg:max-w-[13000px] lg:mx-[71px] h-[2px] mt-[63.37px] bg-[#0b040c99] dark:bg-[#FFFFFF99]"></div>
+      <div className="lg:max-w-[13000px] lg:mx-[71px] h-[2px] mt-[63.37px] bg-[#0b040c99] dark:bg-[#FFFFFF99]"></div>
       <div className="mt-[63px] flex flex-col-reverse justify-start gap-5 md:gap-0 md:flex md:flex-row md:justify-between md:items-center">
         <div className="flex flex-col justify-start items-center">
           <div className="flex flex-row items-center lg:gap-[4px]">
@@ -41,7 +41,7 @@ const Footer = () => {
               Camillus
               <span className="text-secondary dark:text-[#FFFFFF] text-[14px] lg:text-base">
                 {" "}
-                
+
               </span>{" "}
               <span className="text-secondary dark:text-[#FFFFFF] text-[14px] lg:text-base">
                 {new Date().getFullYear()}
@@ -54,20 +54,20 @@ const Footer = () => {
         </div>
         <div className="mt-[10px] md:mt-[65px] flex justify-evenly items-center gap-[20px] md:gap-[40px]">
           <motion.a
-            href="https://www.facebook.com/honour.robinson.1"
+            href="mailto:camilluscodes@gmail.com"
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}
             whileHover={{ scale: 0.99 }}
             className="h-auto w-auto"
           >
-            <FbIcon
+            <MailIcon
               fill={isDarkMode() ? `#FFFFFF99` : '#0b040c99'}
-              className={`w-[30px] h-[30px] rounded-full border-[#0b040c99] dark:border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-gray-500`}
+              className={`w-[30px] h-[30px] rounded-full border-[#0b040c99] dark:border-[#FFFFFF99] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-gray-500`}
             />
           </motion.a>
           <motion.a
-            href="https://x.com/honour_can_code"
+            href="https://camilluscodes"
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}
@@ -80,29 +80,16 @@ const Footer = () => {
             />
           </motion.a>
           <motion.a
-            href="https://www.instagram.com/robinsonhonour"
+            href="https://discordapp.com/users/1387975080109408359"
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}
             whileHover={{ scale: 0.99 }}
             className="h-auto w-auto"
           >
-            <IgIcon
+            <Discord
               fill={isDarkMode() ? `#FFFFFF99` : '#0b040c99'}
-              className={`w-[30px] h-[30px] rounded-full border-[#0b040c99] dark:border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-500 hover:bg-gray-500`}
-            />
-          </motion.a>
-          <motion.a
-            href="https://ng.linkedin.com/in/robinsonhonouramadi"
-            target="_blank"
-            rel="noreferrer"
-            whileTap={{ scale: 1.1 }}
-            whileHover={{ scale: 0.99 }}
-            className="h-auto w-auto"
-          >
-            <InIcon
-              fill={isDarkMode() ? `#FFFFFF99` : '#0b040c99'}
-              className="w-[30px] h-[30px] rounded-full border-[#0b040c99] dark:border-[#FFFFFF99] border-solid border-[2px] p-0.5  transition-all duration-700 hover:bg-gray-500"
+              className={`w-[30px] h-[30px] rounded-full border-[#0b040c99] dark:border-[#FFFFFF99] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-gray-500`}
             />
           </motion.a>
         </div>
