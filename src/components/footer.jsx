@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-import { Copyright, Discord, MailIcon, TwIcon } from "./svgs";
+import { Copyright, Discord, MailIcon, TwIcon, FbIcon, IgIcon } from "./svgs";
 import isDarkMode from "../data/darkMode";
 
 const Footer = () => {
@@ -54,7 +54,7 @@ const Footer = () => {
         </div>
         <div className="mt-[10px] md:mt-[65px] flex justify-evenly items-center gap-[20px] md:gap-[40px]">
           <motion.a
-            href="mailto:camilluscodes@gmail.com"
+            href="mailto:camillus@camilluscodes.com"
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}
@@ -67,7 +67,33 @@ const Footer = () => {
             />
           </motion.a>
           <motion.a
-            href="https://camilluscodes"
+            href="https://www.facebook.com/profile.php?id=61577904460717"
+            target="_blank"
+            rel="noreferrer"
+            whileTap={{ scale: 1.1 }}
+            whileHover={{ scale: 0.99 }}
+            className="h-auto w-auto"
+          >
+            <FbIcon
+              fill={isDarkMode() ? `#FFFFFF99` : '#0b040c99'}
+              className={`w-[30px] h-[30px] rounded-full border-[#0b040c99] dark:border-[#FFFFFF99] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-gray-500`}
+            />
+          </motion.a>
+          <motion.a
+            href="https://www.instagram.com/camillus_codes?igsh=c2ZsYzRtb2szbmZj"
+            target="_blank"
+            rel="noreferrer"
+            whileTap={{ scale: 1.1 }}
+            whileHover={{ scale: 0.99 }}
+            className="h-auto w-auto"
+          >
+            <IgIcon
+              fill={isDarkMode() ? `#FFFFFF99` : '#0b040c99'}
+              className={`w-[30px] h-[30px] rounded-full border-[#0b040c99] dark:border-[#FFFFFF99] border-solid border-[2px] p-1  transition-all duration-500 hover:bg-gray-500`}
+            />
+          </motion.a>
+          <motion.a
+            href="https://x.com/camilluscodes"
             target="_blank"
             rel="noreferrer"
             whileTap={{ scale: 1.1 }}

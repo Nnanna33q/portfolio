@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { TwIcon, MailIcon, Discord } from "./svgs";
+import { TwIcon, MailIcon, Discord, FbIcon, IgIcon } from "./svgs";
 
 const Hero = () => {
   return (
@@ -17,7 +17,7 @@ const Hero = () => {
             </p>
             <div className="md:mt-[16px] flex justify-center items-center  gap-[26px] md:gap-[40px]">
               <motion.a
-                href="mailto:camilluscodes@gmail.com"
+                href="mailto:camillus@camilluscodes.com"
                 target="_blank"
                 rel="noreferrer"
                 whileTap={{ scale: 1.1 }}
@@ -25,6 +25,32 @@ const Hero = () => {
                 className="h-auto w-auto"
               >
                 <MailIcon
+                  fill="#137BED"
+                  className={`w-30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1 transition-all duration-500 hover:bg-white`}
+                />
+              </motion.a>
+              <motion.a
+                href="https://www.facebook.com/profile.php?id=61577904460717"
+                target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className="h-auto w-auto"
+              >
+                <FbIcon
+                  fill="#137BED"
+                  className={`w-30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1 transition-all duration-500 hover:bg-white`}
+                />
+              </motion.a>
+              <motion.a
+                href="https://www.instagram.com/camillus_codes?igsh=c2ZsYzRtb2szbmZj"
+                target="_blank"
+                rel="noreferrer"
+                whileTap={{ scale: 1.1 }}
+                whileHover={{ scale: 0.99 }}
+                className="h-auto w-auto"
+              >
+                <IgIcon
                   fill="#137BED"
                   className={`w-30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1 transition-all duration-500 hover:bg-white`}
                 />

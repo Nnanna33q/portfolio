@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { MailIcon, Discord, TwIcon } from "./svgs";
+import { MailIcon, Discord, TwIcon, FbIcon, IgIcon } from "./svgs";
 
 const Contact = () => {
   return (
@@ -15,7 +15,7 @@ const Contact = () => {
         className={`hidden lg:block mt-[51px] flex gap-[60px] lg:flex lg:flex-row items-center justify-center`}
       >
         <motion.a
-          href="mailto:camilluscodes@gmail.com"
+          href="mailto:camillus@camilluscodes.com"
           target="_blank"
           rel="noreferrer"
           whileTap={{ scale: 1.1 }}
@@ -23,6 +23,32 @@ const Contact = () => {
           className="h-auto w-auto"
         >
           <MailIcon
+            fill="#137BED"
+            className={`w-30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1 transition-all duration-500 hover:bg-white`}
+          />
+        </motion.a>
+        <motion.a
+          href="https://www.facebook.com/profile.php?id=61577904460717"
+          target="_blank"
+          rel="noreferrer"
+          whileTap={{ scale: 1.1 }}
+          whileHover={{ scale: 0.99 }}
+          className="h-auto w-auto"
+        >
+          <FbIcon
+            fill="#137BED"
+            className={`w-30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1 transition-all duration-500 hover:bg-white`}
+          />
+        </motion.a>
+        <motion.a
+          href="https://www.instagram.com/camillus_codes?igsh=c2ZsYzRtb2szbmZj"
+          target="_blank"
+          rel="noreferrer"
+          whileTap={{ scale: 1.1 }}
+          whileHover={{ scale: 0.99 }}
+          className="h-auto w-auto"
+        >
+          <IgIcon
             fill="#137BED"
             className={`w-30px] h-[30px] rounded-full border-[#137BED] border-solid border-[2px] p-1 transition-all duration-500 hover:bg-white`}
           />
