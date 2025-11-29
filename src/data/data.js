@@ -1,5 +1,11 @@
 export const projects = [
   {
+    name: "RM Car Sales",
+    desc: 'RM Car Sales is a full-stack car dealership app with a React frontend and an Express/MongoDB backend. It features secure JWT-based admin authentication, real-time inventory management, and reliable cross-site API communication',
+    lang: "React + Node.js + TailwindCSS + TypeScript",
+    link: "https://rm-car.vercel.app/"
+  },
+  {
     name: "0xChat",
     desc: "Anonymous chat web application that leverages websockets and SIWE (Sign In With Ethereum) technology",
     lang: "React + Node.js + TailwindCSS",
@@ -39,6 +45,10 @@ export const skills = [
   {
     id: 5,
     title: "JavaScript",
+  },
+  {
+    id: 6,
+    title: "TypeScript"
   },
   {
     id: 8,
